@@ -17,5 +17,75 @@ $green4: #169061;
 body {
   height: 100vh;
   background-color: #211d1d;
-  font-family: 'Robot' sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.first-block {
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 840px;
+
+  // .first-block__container
+  &__container {
+    width: 375px;
+    height: 680px;
+    margin: auto;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+
+    // .first-block__container_first
+    &_first {
+      background-image: url('http://co0kie.github.io/codepen/mindful/landscape.jpg');
+      background-size: 770px;
+      background-position: -392px -88px;
+      background-color: $purple1;
+    }
+  }
+
+  // .first-block__top
+  &__top {
+    margin: 110px 40px 0;
+    color: white;
+    time {
+      font-size: 16px;
+    }
+  }
+
+  // .first-block__title
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 32px;
+  }
+}
+
+.notification {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px 0 $purple2;
+  p {
+    margin: 0;
+    strong {
+      display: block;
+      color: $orange1;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    img {
+      width: 17px;
+      vertical-align: bottom;
+      margin-right: 3px;
+    }
+  }
+  small {
+    margin-left: auto;
+  }
 }
